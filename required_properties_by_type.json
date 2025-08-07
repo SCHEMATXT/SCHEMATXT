@@ -1,0 +1,13 @@
+{
+  "Organization": ["name", "url"],
+  "Person": ["name"],
+  "Place": ["name", "address"],
+  "PostalAddress": ["streetAddress", "addressLocality", "postalCode", "addressCountry"],
+  "Product": ["name", "image", "description"],
+  "Event": ["name", "startDate", "location"],
+  "CreativeWork": ["name"],
+  "WebSite": ["url", "name"],
+  "LocalBusiness": ["name", "address", "telephone"],
+  "ImageObject": ["url", "width", "height"],
+  "Article": ["headline", "author", "datePublished"]
+}
