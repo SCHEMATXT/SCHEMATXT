@@ -2,7 +2,7 @@
 
 ## The AI-Era Evolution of robots.txt
 
-Schema.txt is a proposed standard that provides AI crawlers and search engines with efficient access to structured semantic data, solving the compute cost crisis of inferential content understanding.
+Schema.txt is a proposed standard that provides AI crawlers and search engines with efficient access to rich structured semantic data, pre-extracted, indexed, and cataloged by entity type, delivering high-value structured content without the need for complex inference processing thus solving the compute cost crisis of inferential content understanding.
 
 ## The Problem
 
