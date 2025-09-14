@@ -134,7 +134,7 @@ Add Schema directive pointing to your schema.txt file:
 Schema: https://example.com/schema.txt
 ```
 ### Step 5: Add to schema-sitemap.xml // Optional
-Add schema.txt json files as API endpoints to your schema-sitemp.xml file. 
+Add schema.txt json files as API endpoints to your schema-sitemap.xml file. 
 Referenced for example from a dedicated 'GEO' page, that is both human, and machine readable. .
 
 ### Step 6: Validate
