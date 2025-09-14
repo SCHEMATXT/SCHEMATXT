@@ -13,19 +13,20 @@ Schema.txt is a proposed standard that provides AI crawlers and search engines w
 
 ## The Solution
 
-Schema.txt creates a domain-level semantic catalog that directs AI systems to structured data endpoints, eliminating the need for expensive page-by-page inference.
+Schema.txt creates a domain-level **semantic catalog** of your knowledge graph fragments that directs AI systems to structured data endpoints, eliminating the need for expensive page-by-page inference.
 
 ## Discovery Through robots.txt
 
-Schema.txt leverages the existing robots.txt infrastructure for universal discovery, following the same pattern as sitemap declarations:
+Schema.txt leverages the existing robots.txt infrastructure for universal discovery; following the same pattern as sitemap declarations:
 
 ```
 # robots.txt
 User-agent: *
 Disallow:
 
+Schema: https://example.com/schema.txt // Step 4
 Sitemap: https://example.com/sitemap.xml
-Schema: https://example.com/schema.txt
+Sitemap: https://example.com/schema-sitemap.xml // Step 5
 ```
 
 This approach ensures:
@@ -132,9 +133,12 @@ Add Schema directive pointing to your schema.txt file:
 ```
 Schema: https://example.com/schema.txt
 ```
+### Step 5: Add to schema-sitemap.xml // Optional
+Add schema.txt json files as API endpoints to your schema-sitemp.xml file. 
+Referenced for example from a dedicated 'GEO' page, that is both human, and machine readable. .
 
-### Step 5: Validate
-Use schema.org validation tools to ensure all endpoint JSON-LD compliance.
+### Step 6: Validate
+Use schema.org validation tools to ensure all endpoints are JSON-LD compliance.
 
 ## Technical Implementation
 
@@ -149,7 +153,9 @@ For existing crawlers to support schema.txt:
 1. **Parse robots.txt** (already implemented)
 2. **Check for Schema directive** (simple addition)
 3. **Fetch and parse schema.txt** (basic text parsing)
-4. **Access CDN endpoints** (existing JSON-LD processing)
+4. **Access CDN endpoints** (existing JSON-LD processing) // Or, instead use API endpoints
+5. **Create GEO page of endpoints** (Create human, and machine readable links to API endpoints)
+6. **Update GEO page headers to point to endpoints** (Add <link rel="alternate"> links for each artifact)
 
 ### Rate Limiting and Security
 - Implement appropriate rate limiting on schema endpoints
@@ -186,8 +192,8 @@ This specification is released under Creative Commons Attribution 4.0 Internatio
 
 ---
 
-**Created by the Viseon.io team - Making the web AI-ready, efficiently.**
+**Created by the [VISEON.IO](https://www.reddit.com/r/viseon) team - Making the web AI-ready, efficiently.**
 
-**Community Discussion**: r/schematxt
+**Community Discussion**: [r/schematxt](https://www.reddit.com/r/schematxt)
 
 
